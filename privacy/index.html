@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — ClimateCart</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+
+<nav class="doc-links">
+  <a href="../">Home</a>
+  <a href="../terms/">Terms of Use</a>
+</nav>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated <strong>6 July 2026</strong> — Version <strong>2026-07-06</strong></p>
+
+<p>This Privacy Policy for <strong>Tjok Meuwissen</strong>, doing business as <strong>ClimateCart</strong> ("we", "us", "our"), explains how we access, collect, store, use, and share ("process") your personal information when you use our mobile application ClimateCart (the "Services").</p>
+
+<p>ClimateCart is a mobile application that estimates the environmental footprint of grocery purchases. Users scan or upload their grocery receipts, which are processed via optical character recognition to identify products and calculate an estimated carbon footprint based on the Agribalyse 3.1 database. Users may optionally create an account to save their scan results.</p>
+
+<p><strong>Questions or concerns?</strong> Contact us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>.</p>
+
+<h2>1. Summary of key points</h2>
+<ul>
+  <li><strong>What we collect from you:</strong> your email address and hashed password (at signup); your language preference; the results of receipt scans you choose to save.</li>
+  <li><strong>What we do <em>not</em> store:</strong> receipt images and PDFs you upload for scanning, and the text extracted from them, are processed transiently and discarded immediately after processing. We do not store IP addresses, device identifiers, location data, or analytics events.</li>
+  <li><strong>Sensitive information:</strong> we do not process special-category (sensitive) personal data as defined in Art. 9 GDPR.</li>
+  <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition.</li>
+  <li><strong>Your rights:</strong> you have the right to access, rectify, erase, restrict, port, and object to the processing of your personal data, and to lodge a complaint with a supervisory authority.</li>
+  <li><strong>Retention:</strong> we keep your data only for as long as your account exists. You can delete individual receipts or your entire account from within the app at any time.</li>
+</ul>
+
+<h2>2. What information we collect</h2>
+
+<h3>2.1 Information you provide directly</h3>
+<p>When you create an account and use ClimateCart, we collect and store the following personal information:</p>
+<ul>
+  <li>Your <strong>email address</strong> (used as your account identifier and for password-reset emails).</li>
+  <li>Your <strong>password</strong>, stored only as a hash by our authentication provider.</li>
+  <li>Your <strong>language preference</strong> (Dutch, French, or English).</li>
+  <li>The <strong>saved results of your receipt scans</strong>, including the receipt date, an optional name you assign to the receipt, the product-level breakdown, the calculated total carbon footprint, and optionally your household size. This information is stored only if you choose to save a scan while signed in.</li>
+  <li>Timestamps recording when you accepted this Privacy Policy and our Terms of Use, and the version identifiers of the versions you accepted.</li>
+</ul>
+
+<h3>2.2 Information we process transiently but do not store</h3>
+<p>When you scan or upload a receipt:</p>
+<ul>
+  <li>The <strong>receipt image or PDF</strong> is uploaded to our backend and forwarded to Google Cloud Vision for optical character recognition.</li>
+  <li>The <strong>extracted text</strong> is used by our matching pipeline to identify products.</li>
+</ul>
+<p>Neither the receipt image nor the extracted text is stored on our servers or by our sub-processors after the scan completes. Only the calculated results are stored, and only if you are signed in and choose to save them.</p>
+
+<h3>2.3 Information automatically collected</h3>
+<p>We do not use analytics services, tracking pixels, cookies, or advertising identifiers. We do not collect or store your IP address, device identifiers, operating system version, or location data.</p>
+<p>The only automatically-generated data we retain is a per-user counter of API requests, used solely to enforce fair-use rate limits and prevent abuse of our OCR quota. This counter contains no personally identifying information beyond your account identifier and is deleted when you delete your account.</p>
+
+<h3>2.4 Mobile device permissions</h3>
+<p>ClimateCart requests the following permissions on your Android device:</p>
+<ul>
+  <li><strong>Camera</strong> — required to photograph grocery receipts.</li>
+  <li><strong>Storage / file access</strong> — required to let you upload receipt PDFs from your device.</li>
+</ul>
+<p>These permissions are used only for the specific action you take (photographing or picking a file). You can revoke either permission at any time in your Android system settings.</p>
+
+<h2>3. How we use your information</h2>
+<p>We process your personal information only for the following purposes:</p>
+<ul>
+  <li><strong>To provide the Services:</strong> authenticating your account, running the OCR and footprint-calculation pipeline on receipts you submit, storing and retrieving results you choose to save.</li>
+  <li><strong>To respond to inquiries:</strong> when you contact us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>.</li>
+  <li><strong>To protect the Services:</strong> preventing abuse of our infrastructure and OCR quota via per-user rate-limiting.</li>
+  <li><strong>To comply with legal obligations:</strong> retaining timestamps of your acceptance of this Privacy Policy and our Terms of Use as evidence of consent (Art. 7 GDPR).</li>
+</ul>
+<p>We do not use your data for advertising, marketing, profiling, or automated decision-making with legal or similarly significant effects.</p>
+
+<h2>4. Legal bases for processing (GDPR)</h2>
+<p>Under the EU GDPR and UK GDPR, we rely on the following legal bases:</p>
+<ul>
+  <li><strong>Performance of a contract</strong> (Art. 6.1.b) for account creation, authentication, receipt processing (OCR and matching), and saving your scan results.</li>
+  <li><strong>Legitimate interests</strong> (Art. 6.1.f) for per-user rate-limiting, which is necessary to protect the availability and cost-integrity of the Services against abuse.</li>
+  <li><strong>Legal obligation</strong> (Art. 6.1.c) for recording your acceptance of this Privacy Policy and our Terms of Use, which we are required to document under Art. 7 GDPR.</li>
+</ul>
+
+<h2>5. Sub-processors</h2>
+<p>We share personal information only with the following sub-processors, each of which acts on our documented instructions under a data processing agreement:</p>
+<ul>
+  <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters.</li>
+  <li><strong>Render</strong> (Render Services, Inc., hosted in Frankfurt, Germany) — provides backend application hosting. Data processed transiently: receipt image content and extracted text during the scan flow.</li>
+  <li><strong>Google Cloud Vision</strong> (Google LLC, processed in the United States) — provides optical character recognition. Data processed transiently: receipt image content only.</li>
+</ul>
+<p>We do not sell your personal information. We do not share it with advertisers, data brokers, or analytics providers.</p>
+
+<h2>6. International data transfers</h2>
+<p>Our primary infrastructure is located in Germany, within the European Union. Personal data stored by ClimateCart does not leave the EU.</p>
+<p>Receipt images are transiently transferred to the United States for optical character recognition by Google Cloud Vision. This transfer is protected by the <strong>EU-US Data Privacy Framework</strong>, under which Google LLC is self-certified with the U.S. Department of Commerce. As an additional safeguard, Google's Cloud Data Processing Addendum incorporates the European Commission's Standard Contractual Clauses.</p>
+
+<h2>7. Retention</h2>
+<p>We keep your personal information only for as long as your account exists:</p>
+<ul>
+  <li><strong>Account records</strong> (email, hashed password, language, consent timestamps): until you delete your account.</li>
+  <li><strong>Saved receipt scans:</strong> until you delete the individual receipt or your account.</li>
+  <li><strong>Rate-limit counters:</strong> deleted automatically when you delete your account.</li>
+  <li><strong>Receipt images and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
+</ul>
+<p>You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. Deletion is immediate and irreversible.</p>
+
+<h2>8. Security</h2>
+<p>We apply the following technical and organisational measures to protect your personal information (Art. 32 GDPR):</p>
+<ul>
+  <li>All data transmission uses HTTPS with TLS encryption.</li>
+  <li>Passwords are hashed by our authentication provider — we never store or see your plaintext password.</li>
+  <li>Backend endpoints are protected by JWT-based authentication.</li>
+  <li>Row-level security policies ensure that each user can access only their own data in our database.</li>
+  <li>Per-user and per-IP rate limits protect against abuse.</li>
+  <li>Receipt images and OCR text are processed in memory and never written to persistent storage.</li>
+  <li>Our primary data-processing infrastructure is located within the EU.</li>
+</ul>
+<p>No security measure is perfect. If we become aware of a personal data breach affecting your rights, we will notify the Belgian supervisory authority within 72 hours and, where required, notify you directly.</p>
+
+<h2>9. Children</h2>
+<p>ClimateCart is not directed at children under 16. We do not knowingly collect personal information from children under 16. If you believe a child has provided us with personal information, please contact us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a> and we will take reasonable steps to delete it.</p>
+
+<h2>10. Your rights under the GDPR</h2>
+<p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, you have the following rights regarding your personal data:</p>
+<ul>
+  <li><strong>Right of access</strong> (Art. 15) — obtain a copy of the personal data we hold about you.</li>
+  <li><strong>Right to rectification</strong> (Art. 16) — correct inaccurate or incomplete data.</li>
+  <li><strong>Right to erasure</strong> (Art. 17) — request deletion of your data.</li>
+  <li><strong>Right to restriction</strong> (Art. 18) — request that we limit how we process your data.</li>
+  <li><strong>Right to data portability</strong> (Art. 20) — receive your data in a machine-readable format.</li>
+  <li><strong>Right to object</strong> (Art. 21) — object to processing based on legitimate interests.</li>
+  <li><strong>Right not to be subject to solely automated decision-making</strong> (Art. 22). We do not make automated decisions with legal or similarly significant effects about you.</li>
+</ul>
+<p>You can exercise the rights to rectification and erasure directly in the app: edit any saved receipt, delete individual receipts, or delete your entire account from the settings screen. For access and portability requests, please email us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>. We will respond within 30 days (Art. 12.3 GDPR).</p>
+<p><strong>Right to complain.</strong> If you believe we have processed your personal data unlawfully, you have the right to lodge a complaint with the Belgian supervisory authority, the <strong>Gegevensbeschermingsautoriteit / Autorité de protection des données</strong> (<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">gegevensbeschermingsautoriteit.be</a>), or with the supervisory authority in your country of residence.</p>
+
+<h2>11. Do Not Track</h2>
+<p>ClimateCart is a native mobile application and does not track your browsing activity. We do not use cookies, web beacons, or any browser-based tracking technology, so there is nothing for a Do Not Track signal to affect.</p>
+
+<h2>12. Third-party links</h2>
+<p>ClimateCart contains a link to Ko-fi, an external donation platform we use to accept optional donations. When you tap that link, you leave the ClimateCart app and Ko-fi's own privacy policy applies to your interaction with them. We do not share your ClimateCart account data with Ko-fi.</p>
+
+<h2>13. Updates to this Policy</h2>
+<p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the latest version. If we make material changes, we will notify you within the app on your next launch and require you to acknowledge the new version before continuing.</p>
+
+<h2>14. Contact</h2>
+<p>The data controller responsible for your personal information is:</p>
+<address>
+  Tjok Meuwissen<br>
+  Bronstraat 121<br>
+  1060 Sint-Gillis<br>
+  België / Belgium<br>
+  <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>
+</address>
+
+</main>
+</body>
+</html>
