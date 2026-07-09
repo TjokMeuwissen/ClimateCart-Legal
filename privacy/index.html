@@ -28,7 +28,7 @@
   <li><strong>What we collect from you:</strong> your email address and hashed password (at signup); your language preference; the results of receipt scans you choose to save.</li>
   <li><strong>What we do <em>not</em> store:</strong> receipt images and PDFs you upload for scanning, and the text extracted from them, are processed transiently and discarded immediately after processing. We do not store IP addresses, device identifiers, location data, or analytics events.</li>
   <li><strong>Sensitive information:</strong> we do not process special-category (sensitive) personal data as defined in Art. 9 GDPR.</li>
-  <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition.</li>
+  <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition of receipt <em>images</em> only.</li>
   <li><strong>Your rights:</strong> you have the right to access, rectify, erase, restrict, port, and object to the processing of your personal data, and to lodge a complaint with a supervisory authority.</li>
   <li><strong>Retention:</strong> we keep your data only for as long as your account exists. You can delete individual receipts or your entire account from within the app at any time.</li>
 </ul>
@@ -48,10 +48,11 @@
 <h3>2.2 Information we process transiently but do not store</h3>
 <p>When you scan or upload a receipt:</p>
 <ul>
-  <li>The <strong>receipt image or PDF</strong> is uploaded to our backend and forwarded to Google Cloud Vision for optical character recognition.</li>
+  <li>If it is a <strong>photo</strong> (image file), the image is uploaded to our backend and forwarded to Google Cloud Vision in the United States for optical character recognition (OCR).</li>
+  <li>If it is a <strong>PDF</strong>, the file is uploaded to our backend and processed locally on our EU-based backend server to extract its text. PDFs are <strong>not</strong> sent to Google Cloud Vision or transferred outside the European Union.</li>
   <li>The <strong>extracted text</strong> is used by our matching pipeline to identify products.</li>
 </ul>
-<p>Neither the receipt image nor the extracted text is stored on our servers or by our sub-processors after the scan completes. Only the calculated results are stored, and only if you are signed in and choose to save them.</p>
+<p>Neither the receipt image, nor the PDF, nor the extracted text is stored on our servers or by our sub-processors after the scan completes. Only the calculated results are stored, and only if you are signed in and choose to save them.</p>
 
 <h3>2.3 Information automatically collected</h3>
 <p>We do not use analytics services, tracking pixels, cookies, or advertising identifiers. We do not collect or store your IP address, device identifiers, operating system version, or location data.</p>
@@ -87,14 +88,14 @@
 <p>We share personal information only with the following sub-processors, each of which acts on our documented instructions under a data processing agreement:</p>
 <ul>
   <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters.</li>
-  <li><strong>Render</strong> (Render Services, Inc., hosted in Frankfurt, Germany) — provides backend application hosting. Data processed transiently: receipt image content and extracted text during the scan flow.</li>
-  <li><strong>Google Cloud Vision</strong> (Google LLC, processed in the United States) — provides optical character recognition. Data processed transiently: receipt image content only.</li>
+  <li><strong>Render</strong> (Render Services, Inc., hosted in Frankfurt, Germany) — provides backend application hosting. Data processed transiently: receipt image content, receipt PDF content, and the text extracted from them during the scan flow.</li>
+  <li><strong>Google Cloud Vision</strong> (Google LLC, processed in the United States) — provides optical character recognition for receipt <em>images</em> only. Data processed transiently: receipt image content. PDFs are not sent to Google Cloud Vision.</li>
 </ul>
 <p>We do not sell your personal information. We do not share it with advertisers, data brokers, or analytics providers.</p>
 
 <h2>6. International data transfers</h2>
-<p>Our primary infrastructure is located in Germany, within the European Union. Personal data stored by ClimateCart does not leave the EU.</p>
-<p>Receipt images are transiently transferred to the United States for optical character recognition by Google Cloud Vision. This transfer is protected by the <strong>EU-US Data Privacy Framework</strong>, under which Google LLC is self-certified with the U.S. Department of Commerce. As an additional safeguard, Google's Cloud Data Processing Addendum incorporates the European Commission's Standard Contractual Clauses.</p>
+<p>Our primary infrastructure is located in Germany, within the European Union. Personal data stored by ClimateCart does not leave the EU. Receipts uploaded as PDFs are processed entirely within the EU.</p>
+<p>Receipts uploaded as photos are transiently transferred to the United States for optical character recognition by Google Cloud Vision. This transfer is protected by the <strong>EU-US Data Privacy Framework</strong>, under which Google LLC is self-certified with the U.S. Department of Commerce. As an additional safeguard, Google's Cloud Data Processing Addendum incorporates the European Commission's Standard Contractual Clauses.</p>
 
 <h2>7. Retention</h2>
 <p>We keep your personal information only for as long as your account exists:</p>
@@ -102,7 +103,7 @@
   <li><strong>Account records</strong> (email, hashed password, language, consent timestamps): until you delete your account.</li>
   <li><strong>Saved receipt scans:</strong> until you delete the individual receipt or your account.</li>
   <li><strong>Rate-limit counters:</strong> deleted automatically when you delete your account.</li>
-  <li><strong>Receipt images and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
+  <li><strong>Receipt images, PDFs, and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
 </ul>
 <p>You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. Deletion is immediate and irreversible.</p>
 
@@ -114,7 +115,7 @@
   <li>Backend endpoints are protected by JWT-based authentication.</li>
   <li>Row-level security policies ensure that each user can access only their own data in our database.</li>
   <li>Per-user and per-IP rate limits protect against abuse.</li>
-  <li>Receipt images and OCR text are processed in memory and never written to persistent storage.</li>
+  <li>Receipt images, PDFs, and OCR text are processed in memory and never written to persistent storage.</li>
   <li>Our primary data-processing infrastructure is located within the EU.</li>
 </ul>
 <p>No security measure is perfect. If we become aware of a personal data breach affecting your rights, we will notify the Belgian supervisory authority within 72 hours and, where required, notify you directly.</p>
