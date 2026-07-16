@@ -15,7 +15,7 @@
 </nav>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated <strong>6 July 2026</strong> — Version <strong>2026-07-06</strong></p>
+<p class="meta">Last updated <strong>16 July 2026</strong> — Version <strong>2026-07-16</strong></p>
 
 <p>This Privacy Policy for <strong>Tjok Meuwissen</strong>, doing business as <strong>ClimateCart</strong> ("we", "us", "our"), explains how we access, collect, store, use, and share ("process") your personal information when you use our mobile application ClimateCart (the "Services").</p>
 
@@ -30,7 +30,7 @@
   <li><strong>Sensitive information:</strong> we do not process special-category (sensitive) personal data as defined in Art. 9 GDPR.</li>
   <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition of receipt <em>images</em> only.</li>
   <li><strong>Your rights:</strong> you have the right to access, rectify, erase, restrict, port, and object to the processing of your personal data, and to lodge a complaint with a supervisory authority.</li>
-  <li><strong>Retention:</strong> we keep your data only for as long as your account exists. You can delete individual receipts or your entire account from within the app at any time.</li>
+  <li><strong>Retention:</strong> we keep your data only for as long as your account is active. When you delete your account, all associated data is permanently and immediately removed. Accounts inactive for 24 consecutive months are automatically deleted along with all associated data.</li>
 </ul>
 
 <h2>2. What information we collect</h2>
@@ -98,14 +98,16 @@
 <p>Receipts uploaded as photos are transiently transferred to the United States for optical character recognition by Google Cloud Vision. This transfer is protected by the <strong>EU-US Data Privacy Framework</strong>, under which Google LLC is self-certified with the U.S. Department of Commerce. As an additional safeguard, Google's Cloud Data Processing Addendum incorporates the European Commission's Standard Contractual Clauses.</p>
 
 <h2>7. Retention</h2>
-<p>We keep your personal information only for as long as your account exists:</p>
+<p>We keep your personal information only for as long as your account is active:</p>
 <ul>
-  <li><strong>Account records</strong> (email, hashed password, language, consent timestamps): until you delete your account.</li>
-  <li><strong>Saved receipt scans:</strong> until you delete the individual receipt or your account.</li>
-  <li><strong>Rate-limit counters:</strong> deleted automatically when you delete your account.</li>
+  <li><strong>Account records</strong> (email, hashed password, language, consent timestamps): kept until you delete your account, or until your account has been inactive for 24 consecutive months.</li>
+  <li><strong>Saved receipt scans:</strong> kept until you delete the individual receipt, delete your account, or until your account has been inactive for 24 consecutive months.</li>
+  <li><strong>Rate-limit counters:</strong> deleted automatically when your account is deleted.</li>
   <li><strong>Receipt images, PDFs, and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
 </ul>
-<p>You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. Deletion is immediate and irreversible.</p>
+<p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
+<p><strong>Automatic deletion of inactive accounts.</strong> Accounts that have not been signed into for 24 consecutive months are automatically deleted, along with all associated data, without further notice. This is measured from the timestamp of your last successful sign-in.</p>
+<p><strong>Data exports.</strong> Before deleting your account, you may request a machine-readable export of the data we hold about you (see section 10, Right to data portability). Once your account is deleted, the data is no longer recoverable and we cannot fulfil any subsequent export request.</p>
 
 <h2>8. Security</h2>
 <p>We apply the following technical and organisational measures to protect your personal information (Art. 32 GDPR):</p>
@@ -134,7 +136,8 @@
   <li><strong>Right to object</strong> (Art. 21) — object to processing based on legitimate interests.</li>
   <li><strong>Right not to be subject to solely automated decision-making</strong> (Art. 22). We do not make automated decisions with legal or similarly significant effects about you.</li>
 </ul>
-<p>You can exercise the rights to rectification and erasure directly in the app: edit any saved receipt, delete individual receipts, or delete your entire account from the settings screen. For access and portability requests, please email us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>. We will respond within 30 days (Art. 12.3 GDPR).</p>
+<p>You can exercise the rights to rectification and erasure directly in the app: edit any saved receipt, delete individual receipts, or delete your entire account from the settings screen.</p>
+<p><strong>Access and portability requests.</strong> To request a copy of the personal data we hold about you, or a machine-readable export of your account data, please email us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a> from the email address associated with your ClimateCart account. We will provide a JSON export of your profile record and saved receipts within 30 days of receiving your request (Art. 12.3 GDPR). If you are unable to email from your account address, we may ask for additional information to verify your identity before we release your data.</p>
 <p><strong>Right to complain.</strong> If you believe we have processed your personal data unlawfully, you have the right to lodge a complaint with the Belgian supervisory authority, the <strong>Gegevensbeschermingsautoriteit / Autorité de protection des données</strong> (<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">gegevensbeschermingsautoriteit.be</a>), or with the supervisory authority in your country of residence.</p>
 
 <h2>11. Do Not Track</h2>
