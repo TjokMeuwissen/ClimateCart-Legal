@@ -15,7 +15,7 @@
 </nav>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated <strong>16 July 2026</strong> — Version <strong>2026-07-16</strong></p>
+<p class="meta">Last updated <strong>26 July 2026</strong> — Version <strong>2026-07-26</strong></p>
 
 <p>This Privacy Policy for <strong>Tjok Meuwissen</strong>, doing business as <strong>ClimateCart</strong> ("we", "us", "our"), explains how we access, collect, store, use, and share ("process") your personal information when you use our mobile application ClimateCart (the "Services").</p>
 
@@ -25,8 +25,8 @@
 
 <h2>1. Summary of key points</h2>
 <ul>
-  <li><strong>What we collect from you:</strong> your email address and hashed password (at signup); your language preference; the results of receipt scans you choose to save.</li>
-  <li><strong>What we do <em>not</em> store:</strong> receipt images and PDFs you upload for scanning, and the text extracted from them, are processed transiently and discarded immediately after processing. We do not store IP addresses, device identifiers, location data, or analytics events.</li>
+  <li><strong>What we collect from you:</strong> your email address and hashed password (at signup); your language preference; the results of receipt scans you choose to save; anonymous usage events (such as which features you use); and which product-match corrections you make when reviewing scan results.</li>
+  <li><strong>What we do <em>not</em> store:</strong> receipt images and PDFs you upload for scanning, and the text extracted from them, are processed transiently and discarded immediately after processing. We do not store IP addresses, device identifiers, or location data.</li>
   <li><strong>Sensitive information:</strong> we do not process special-category (sensitive) personal data as defined in Art. 9 GDPR.</li>
   <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition of receipt <em>images</em> only.</li>
   <li><strong>Your rights:</strong> you have the right to access, rectify, erase, restrict, port, and object to the processing of your personal data, and to lodge a complaint with a supervisory authority.</li>
@@ -55,8 +55,14 @@
 <p>Neither the receipt image, nor the PDF, nor the extracted text is stored on our servers or by our sub-processors after the scan completes. Only the calculated results are stored, and only if you are signed in and choose to save them.</p>
 
 <h3>2.3 Information automatically collected</h3>
-<p>We do not use analytics services, tracking pixels, cookies, or advertising identifiers. We do not collect or store your IP address, device identifiers, operating system version, or location data.</p>
-<p>The only automatically-generated data we retain is a per-user counter of API requests, used solely to enforce fair-use rate limits and prevent abuse of our OCR quota. This counter contains no personally identifying information beyond your account identifier and is deleted when you delete your account.</p>
+<p>We do not use third-party analytics services, tracking pixels, cookies, or advertising identifiers. We do not collect or store your IP address, device identifiers, operating system version, or location data.</p>
+<p>We automatically collect the following data, all of which is stored within our existing EU-based database infrastructure:</p>
+<ul>
+  <li><strong>Usage events:</strong> when you use certain features (such as scanning a receipt, saving results, or opening a screen), we record the event type, a timestamp, and your account identifier. These events contain no receipt content, product data, or other personally identifying information beyond your account identifier. They are used solely to understand how the app is used in aggregate and to identify technical problems.</li>
+  <li><strong>Match corrections:</strong> when you review your scan results and correct a product match (for example, re-matching a product to a different entry, removing a product, or editing a weight), we record the original product text from the receipt, the action you took, and the corrected product name if applicable. This data is used solely to improve the accuracy of our product-matching pipeline over time. It does not include the receipt image, the full receipt text, or any information beyond the individual product line you corrected.</li>
+  <li><strong>Rate-limit counters:</strong> a per-user counter of API requests, used solely to enforce fair-use rate limits and prevent abuse of our OCR quota. This counter contains no personally identifying information beyond your account identifier.</li>
+</ul>
+<p>All automatically collected data is deleted when you delete your account.</p>
 
 <h3>2.4 Mobile device permissions</h3>
 <p>ClimateCart requests the following permissions on your Android device:</p>
@@ -70,6 +76,7 @@
 <p>We process your personal information only for the following purposes:</p>
 <ul>
   <li><strong>To provide the Services:</strong> authenticating your account, running the OCR and footprint-calculation pipeline on receipts you submit, storing and retrieving results you choose to save.</li>
+  <li><strong>To improve the Services:</strong> recording which product matches you correct during the review step, so we can improve the accuracy of our product-matching pipeline over time; and collecting anonymous usage events to understand how features are used and to identify technical problems.</li>
   <li><strong>To respond to inquiries:</strong> when you contact us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>.</li>
   <li><strong>To protect the Services:</strong> preventing abuse of our infrastructure and OCR quota via per-user rate-limiting.</li>
   <li><strong>To comply with legal obligations:</strong> retaining timestamps of your acceptance of this Privacy Policy and our Terms of Use as evidence of consent (Art. 7 GDPR).</li>
@@ -80,14 +87,14 @@
 <p>Under the EU GDPR and UK GDPR, we rely on the following legal bases:</p>
 <ul>
   <li><strong>Performance of a contract</strong> (Art. 6.1.b) for account creation, authentication, receipt processing (OCR and matching), and saving your scan results.</li>
-  <li><strong>Legitimate interests</strong> (Art. 6.1.f) for per-user rate-limiting, which is necessary to protect the availability and cost-integrity of the Services against abuse.</li>
+  <li><strong>Legitimate interests</strong> (Art. 6.1.f) for per-user rate-limiting, which is necessary to protect the availability and cost-integrity of the Services against abuse; for collecting usage events, which is necessary to maintain and improve the reliability and quality of the Services; and for recording match corrections, which is necessary to improve the accuracy of the product-matching pipeline that the Services depend on.</li>
   <li><strong>Legal obligation</strong> (Art. 6.1.c) for recording your acceptance of this Privacy Policy and our Terms of Use, which we are required to document under Art. 7 GDPR.</li>
 </ul>
 
 <h2>5. Sub-processors</h2>
 <p>We share personal information only with the following sub-processors, each of which acts on our documented instructions under a data processing agreement:</p>
 <ul>
-  <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters.</li>
+  <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters, usage events, and match correction records.</li>
   <li><strong>Render</strong> (Render Services, Inc., hosted in Frankfurt, Germany) — provides backend application hosting. Data processed transiently: receipt image content, receipt PDF content, and the text extracted from them during the scan flow.</li>
   <li><strong>Google Cloud Vision</strong> (Google LLC, processed in the United States) — provides optical character recognition for receipt <em>images</em> only. Data processed transiently: receipt image content. PDFs are not sent to Google Cloud Vision.</li>
 </ul>
@@ -102,10 +109,11 @@
 <ul>
   <li><strong>Account records</strong> (email, hashed password, language, consent timestamps): kept until you delete your account, or until your account has been inactive for 24 consecutive months.</li>
   <li><strong>Saved receipt scans:</strong> kept until you delete the individual receipt, delete your account, or until your account has been inactive for 24 consecutive months.</li>
+  <li><strong>Usage events and match corrections:</strong> kept for as long as your account is active. Deleted when you delete your account or when your account is automatically deleted due to inactivity.</li>
   <li><strong>Rate-limit counters:</strong> deleted automatically when your account is deleted.</li>
   <li><strong>Receipt images, PDFs, and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
 </ul>
-<p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
+<p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, usage events, match corrections, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
 <p><strong>Automatic deletion of inactive accounts.</strong> Accounts that have not been signed into for 24 consecutive months are automatically deleted, along with all associated data, without further notice. This is measured from the timestamp of your last successful sign-in.</p>
 <p><strong>Data exports.</strong> Before deleting your account, you may request a machine-readable export of the data we hold about you (see section 10, Right to data portability). Once your account is deleted, the data is no longer recoverable and we cannot fulfil any subsequent export request.</p>
 
