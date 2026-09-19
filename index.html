@@ -3,19 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ClimateCart</title>
+<title>ClimateCart — the carbon footprint of your groceries</title>
+<meta name="description" content="Scan your grocery receipt and see the carbon footprint of every product. An Android app for Belgian supermarkets, in English, Dutch and French.">
+<link rel="canonical" href="https://climatecart.app/">
+<link rel="alternate" hreflang="en" href="https://climatecart.app/">
+<link rel="alternate" hreflang="nl" href="https://climatecart.app/nl/">
+<link rel="alternate" hreflang="fr" href="https://climatecart.app/fr/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://climatecart.app/">
+<meta property="og:title" content="ClimateCart — the carbon footprint of your groceries">
+<meta property="og:description" content="Scan your grocery receipt and see the carbon footprint of every product.">
+<meta property="og:image" content="https://climatecart.app/assets/og/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<h1>ClimateCart</h1>
-<p class="meta">About &amp; legal</p>
-<ul>
-  <li><a href="mission/">Mission Statement</a></li>
-  <li><a href="privacy/">Privacy Policy</a></li>
-  <li><a href="terms/">Terms of Use</a></li>
-</ul>
-<p>For questions, contact <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>.</p>
+<main class="home">
+
+<header class="topbar">
+  <a class="brand" href="./">ClimateCart</a>
+  <nav class="lang">
+    <a href="./" aria-current="page">EN</a>
+    <a href="nl/" hreflang="nl">NL</a>
+    <a href="fr/" hreflang="fr">FR</a>
+  </nav>
+</header>
+
+<nav class="pages">
+  <a href="mission/en/">Our mission</a>
+  <a href="privacy/">Privacy Policy</a>
+  <a href="terms/">Terms of Use</a>
+</nav>
+
+<section class="hero">
+  <h1>See the carbon footprint of your groceries</h1>
+  <p class="lead">Take a photo of your supermarket receipt. ClimateCart estimates the CO₂ of every product and shows what your shopping adds up to.</p>
+  <span class="button soon" aria-disabled="true">Coming soon on Google Play</span>
+  <p class="small">Android app · English, Nederlands, Français</p>
+</section>
+
+<h2>How it works</h2>
+<ol class="steps">
+  <li>
+    <img src="assets/screenshots/en/web/1-scan.jpg" width="600" height="1154" alt="ClimateCart home screen with Scan Receipt and Upload PDF buttons" loading="lazy">
+    <h3>1. Scan your receipt</h3>
+    <p>Photograph a paper receipt (up to 3 photos for a long one) or upload a PDF receipt.</p>
+  </li>
+  <li>
+    <img src="assets/screenshots/en/web/2-review.jpg" width="600" height="1154" alt="Review screen listing matched products with their CO₂" loading="lazy">
+    <h3>2. Check the matches</h3>
+    <p>ClimateCart links each line on your receipt to a food category. You see what was matched and fix anything that needs attention.</p>
+  </li>
+  <li>
+    <img src="assets/screenshots/en/web/3-results.jpg" width="600" height="1154" alt="Results screen with total CO₂ and share of the monthly carbon budget" loading="lazy">
+    <h3>3. See your footprint</h3>
+    <p>Get the total in kg CO₂, per product and as a share of your monthly carbon budget. See how much of your fresh fruit and veg is in season in Belgium, and how a more plant-based basket would compare.</p>
+  </li>
+</ol>
+<p>Create an account to save your receipts and follow your footprint over time.</p>
+
+<h2>Why we built it</h2>
+<p>Who really knows what 1 kg or a tonne of CO₂ looks like? ClimateCart puts a real number in front of you every time you shop, so these figures start to mean something. Scanning receipts is the means, not the end.</p>
+<p><a href="mission/en/">Read our mission statement</a></p>
+
+<h2>Rules, not AI</h2>
+<p>No AI is used to match your products. ClimateCart uses a matching algorithm linked to a large product database that we keep improving, so results keep getting better. The carbon values come from Agribalyse, the reference food database of the French environment agency ADEME. Without an AI model, it takes far less computing power, and the same receipt always gives the same result.</p>
+
+<h2>Honest estimates</h2>
+<p>We don't have information from individual producers, so each result is an estimate: a good indication of what a typical value for that product could be. It gives you a clear picture of the overall impact of your diet choices. It is not meant for comparing brands that sell similar products.</p>
+
+<h2>Your data</h2>
+<p>Your receipt photos and PDFs are not stored: they are read once to find your products, then deleted. Photos are read by Google's text-recognition service; PDFs are handled entirely by ClimateCart's own server, without any external service. No tracking cookies, no advertising identifiers, no location data. Results are only saved if you sign in and choose to save them, and they stay in the EU.</p>
+<p><a href="privacy/">Read the privacy policy</a></p>
+
+<footer>
+  <p>Questions? <a href="mailto:contact@climatecart.app">contact@climatecart.app</a> · <a href="https://ko-fi.com/climatecart">Support us on Ko-fi</a></p>
+  <p><a href="mission/en/">Our mission</a> · <a href="privacy/">Privacy Policy</a> · <a href="terms/">Terms of Use</a></p>
+  <p>Carbon data: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Made in Brussels.</p>
+</footer>
+
 </main>
 </body>
 </html>
