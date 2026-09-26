@@ -1,0 +1,76 @@
+{
+  "sections": [
+    "mission",
+    "articles",
+    "legal"
+  ],
+  "labels": {
+    "en": {
+      "mission": "Our mission",
+      "articles": "Interesting facts",
+      "legal": "Legal documents"
+    },
+    "nl": {
+      "mission": "Onze missie",
+      "articles": "Weetjes",
+      "legal": "Juridische documenten"
+    },
+    "fr": {
+      "mission": "Notre mission",
+      "articles": "Infos",
+      "legal": "Documents juridiques"
+    }
+  },
+  "pages": {
+    "home": {
+      "en": "/",
+      "nl": "/nl/",
+      "fr": "/fr/"
+    },
+    "mission": {
+      "en": "/mission/en/",
+      "nl": "/mission/nl/",
+      "fr": "/mission/fr/"
+    },
+    "articles": {
+      "en": "/articles/en/",
+      "nl": "/articles/nl/",
+      "fr": "/articles/fr/"
+    },
+    "meat-origin": {
+      "en": "/articles/meat-origin/en/",
+      "nl": "/articles/meat-origin/nl/",
+      "fr": "/articles/meat-origin/fr/"
+    },
+    "meat-cuts": {
+      "en": "/articles/meat-cuts/en/",
+      "nl": "/articles/meat-cuts/nl/",
+      "fr": "/articles/meat-cuts/fr/"
+    },
+    "privacy": {
+      "en": "/privacy/"
+    },
+    "terms": {
+      "en": "/terms/"
+    },
+    "legal": {
+      "en": "/legal/en/",
+      "nl": "/legal/nl/",
+      "fr": "/legal/fr/"
+    }
+  },
+  "sectionOf": {
+    "mission": "mission",
+    "articles": "articles",
+    "meat-origin": "articles",
+    "meat-cuts": "articles",
+    "privacy": "legal",
+    "terms": "legal",
+    "legal": "legal"
+  },
+  "footer": {
+    "en": "<p>Questions? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Support us on Ko-fi</a></p><p>Carbon data: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Made in Brussels.</p>",
+    "nl": "<p>Vragen? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Steun ons op Ko-fi</a></p><p>Koolstofdata: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Gemaakt in Brussel.</p>",
+    "fr": "<p>Des questions&nbsp;? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Soutenez-nous sur Ko-fi</a></p><p>Données carbone&nbsp;: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Fait à Bruxelles.</p>"
+  }
+}
