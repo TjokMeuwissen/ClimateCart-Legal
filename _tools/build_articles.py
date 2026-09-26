@@ -110,7 +110,6 @@ def page(slug, lang, title, desc, content, depth):
 <link rel="canonical" href="https://climatecart.app/{path}{lang}/">
 {alts}
 <link rel="stylesheet" href="{root}style.css">
-<script src="/site.js" defer></script>
 </head>
 <body data-page="{slug or 'articles'}" data-lang="{lang}">
 <main>
@@ -159,4 +158,5 @@ for lang in LANGS:
                     for s in ('meat-cuts', 'meat-origin'))
     write(f'{lang}/index.html', page('', lang, h, intro, f'<h1>{h}</h1>\n<p class="subtitle">{intro}</p>\n<ul class="article-list">{items}</ul>', 2))
 write('index.html', redirect('articles/', 'Interesting facts'))
-print('done')
+import build_nav
+build_nav.main()
