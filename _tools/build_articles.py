@@ -143,7 +143,8 @@ def write(rel, s):
     open(p, 'w', encoding='utf-8').write(s)
 
 titles = {}
-for slug, sec in (('meat-cuts', '3'), ('meat-origin', '4')):
+PUBLISHED = ()  # e.g. (('meat-cuts', '3'), ('meat-origin', '4')) once articles go live
+for slug, sec in PUBLISHED:
     for lang, md in per_lang(sec).items():
         title, content = body(md, lang)
         titles[(slug, lang)] = title
@@ -152,11 +153,5 @@ for slug, sec in (('meat-cuts', '3'), ('meat-origin', '4')):
               f'<h1>{title}</h1>\n<p class="subtitle">{html.escape(sub)}</p>\n\n{content}', 3))
     write(f'{slug}/index.html', redirect(f'articles/{slug}/', re.sub('<[^>]+>', '', titles[(slug, "en")])))
 
-for lang in LANGS:
-    h, intro = INDEX[lang]
-    items = ''.join(f'<li><a href="../{s}/{lang}/"><strong>{titles[(s, lang)]}</strong><span>{html.escape(SUBTITLE[s][lang])}</span></a></li>'
-                    for s in ('meat-cuts', 'meat-origin'))
-    write(f'{lang}/index.html', page('', lang, h, intro, f'<h1>{h}</h1>\n<p class="subtitle">{intro}</p>\n<ul class="article-list">{items}</ul>', 2))
-write('index.html', redirect('articles/', 'Interesting facts'))
 import build_nav
 build_nav.main()
