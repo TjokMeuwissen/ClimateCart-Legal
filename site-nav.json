@@ -1,20 +1,24 @@
 {
   "sections": [
+    "home",
     "mission",
     "legal"
   ],
   "labels": {
     "en": {
-      "mission": "Our mission",
-      "legal": "Legal documents"
+      "home": "Home",
+      "mission": "Mission",
+      "legal": "Legal"
     },
     "nl": {
-      "mission": "Onze missie",
-      "legal": "Juridische documenten"
+      "home": "Home",
+      "mission": "Missie",
+      "legal": "Juridisch"
     },
     "fr": {
-      "mission": "Notre mission",
-      "legal": "Documents juridiques"
+      "home": "Accueil",
+      "mission": "Mission",
+      "legal": "Juridique"
     }
   },
   "pages": {
@@ -41,6 +45,7 @@
     }
   },
   "sectionOf": {
+    "home": "home",
     "mission": "mission",
     "privacy": "legal",
     "terms": "legal",
