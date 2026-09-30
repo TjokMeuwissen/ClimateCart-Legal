@@ -15,7 +15,7 @@
 
 
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated <strong>26 July 2026</strong> — Version <strong>2026-07-26</strong></p>
+<p class="meta">Last updated <strong>29 September 2026</strong> — Version <strong>2026-07-26</strong></p>
 
 <p>This Privacy Policy for the private individual acting as <strong>ClimateCart</strong> (full name and contact details in section 14 at the end of this policy) ("we", "us", "our"), explains how we access, collect, store, use, and share ("process") your personal information when you use our mobile application ClimateCart (the "Services").</p>
 
@@ -59,7 +59,8 @@
 <p>We automatically collect the following data, all of which is stored within our existing EU-based database infrastructure:</p>
 <ul>
   <li><strong>Usage events:</strong> when you use certain features (such as scanning a receipt, saving results, or opening a screen), we record the event type, a timestamp, and your account identifier. These events contain no receipt content, product data, or other personally identifying information beyond your account identifier. They are used solely to understand how the app is used in aggregate and to identify technical problems.</li>
-  <li><strong>Match corrections:</strong> when you review your scan results and correct a product match (for example, re-matching a product to a different entry, removing a product, or editing a weight), we record the original product text from the receipt, the action you took, and the corrected product name if applicable. This data is used solely to improve the accuracy of our product-matching pipeline over time. It does not include the receipt image, the full receipt text, or any information beyond the individual product line you corrected.</li>
+  <li><strong>Match corrections:</strong> when you review your scan results and correct a product match (for example, re-matching a product to a different entry, removing a product, or editing a weight), we record the original product text from the receipt, the action you took, the corrected product name if applicable, and an identifier of the scan the correction belongs to. This data is used to improve the accuracy of our product-matching pipeline over time and to show your own progress in the app (badges). It does not include the receipt image, the full receipt text, or any other product lines from the receipt.</li>
+  <li><strong>Badges and milestones:</strong> which badge levels and milestone messages have been shown to you, so that each message appears only once. Your badge levels themselves are calculated from your saved scans and your match corrections; no separate data is collected for them.</li>
   <li><strong>Rate-limit counters:</strong> a per-user counter of API requests, used solely to enforce fair-use rate limits and prevent abuse of our OCR quota. This counter contains no personally identifying information beyond your account identifier.</li>
 </ul>
 <p>All automatically collected data is deleted when you delete your account.</p>
@@ -75,7 +76,7 @@
 <h2>3. How we use your information</h2>
 <p>We process your personal information only for the following purposes:</p>
 <ul>
-  <li><strong>To provide the Services:</strong> authenticating your account, running the OCR and footprint-calculation pipeline on receipts you submit, storing and retrieving results you choose to save.</li>
+  <li><strong>To provide the Services:</strong> authenticating your account, running the OCR and footprint-calculation pipeline on receipts you submit, storing and retrieving results you choose to save, and showing your progress in the app (badges and milestones).</li>
   <li><strong>To improve the Services:</strong> recording which product matches you correct during the review step, so we can improve the accuracy of our product-matching pipeline over time; and collecting anonymous usage events to understand how features are used and to identify technical problems.</li>
   <li><strong>To respond to inquiries:</strong> when you contact us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>.</li>
   <li><strong>To protect the Services:</strong> preventing abuse of our infrastructure and OCR quota via per-user rate-limiting.</li>
@@ -86,7 +87,7 @@
 <h2>4. Legal bases for processing (GDPR)</h2>
 <p>Under the EU GDPR and UK GDPR, we rely on the following legal bases:</p>
 <ul>
-  <li><strong>Performance of a contract</strong> (Art. 6.1.b) for account creation, authentication, receipt processing (OCR and matching), and saving your scan results.</li>
+  <li><strong>Performance of a contract</strong> (Art. 6.1.b) for account creation, authentication, receipt processing (OCR and matching), saving your scan results, and showing your progress in the app (badges and milestones).</li>
   <li><strong>Legitimate interests</strong> (Art. 6.1.f) for per-user rate-limiting, which is necessary to protect the availability and cost-integrity of the Services against abuse; for collecting usage events, which is necessary to maintain and improve the reliability and quality of the Services; and for recording match corrections, which is necessary to improve the accuracy of the product-matching pipeline that the Services depend on.</li>
   <li><strong>Legal obligation</strong> (Art. 6.1.c) for recording your acceptance of this Privacy Policy and our Terms of Use, which we are required to document under Art. 7 GDPR.</li>
 </ul>
@@ -94,7 +95,7 @@
 <h2>5. Sub-processors</h2>
 <p>We share personal information only with the following sub-processors, each of which acts on our documented instructions under a data processing agreement:</p>
 <ul>
-  <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters, usage events, and match correction records.</li>
+  <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters, usage events, match correction records, and records of which badges and milestones have been shown to you.</li>
   <li><strong>Render</strong> (Render Services, Inc., hosted in Frankfurt, Germany) — provides backend application hosting. Data processed transiently: receipt image content, receipt PDF content, and the text extracted from them during the scan flow.</li>
   <li><strong>Google Cloud Vision</strong> (Google LLC, processed in the United States) — provides optical character recognition for receipt <em>images</em> only. Data processed transiently: receipt image content. PDFs are not sent to Google Cloud Vision.</li>
 </ul>
@@ -109,11 +110,11 @@
 <ul>
   <li><strong>Account records</strong> (email, hashed password, language, consent timestamps): kept until you delete your account, or until your account has been inactive for 24 consecutive months.</li>
   <li><strong>Saved receipt scans:</strong> kept until you delete the individual receipt, delete your account, or until your account has been inactive for 24 consecutive months.</li>
-  <li><strong>Usage events and match corrections:</strong> kept for as long as your account is active. Deleted when you delete your account or when your account is automatically deleted due to inactivity.</li>
+  <li><strong>Usage events, match corrections, and badge and milestone records:</strong> kept for as long as your account is active. Deleted when you delete your account or when your account is automatically deleted due to inactivity.</li>
   <li><strong>Rate-limit counters:</strong> deleted automatically when your account is deleted.</li>
   <li><strong>Receipt images, PDFs, and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
 </ul>
-<p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, usage events, match corrections, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
+<p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, usage events, match corrections, badge and milestone records, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
 <p><strong>Automatic deletion of inactive accounts.</strong> Accounts that have not been signed into for 24 consecutive months are automatically deleted, along with all associated data, without further notice. This is measured from the timestamp of your last successful sign-in.</p>
 <p><strong>Data exports.</strong> Before deleting your account, you may request a machine-readable export of the data we hold about you (see section 10, Right to data portability). Once your account is deleted, the data is no longer recoverable and we cannot fulfil any subsequent export request.</p>
 
