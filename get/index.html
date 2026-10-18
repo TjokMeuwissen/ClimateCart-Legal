@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ClimateCart</title>
+<script>
+var ua = navigator.userAgent, lang = (navigator.language || '').slice(0, 2);
+var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+location.replace(/Android/i.test(ua) ? 'https://play.google.com/store/apps/details?id=com.tjok.climatecart'
+  : ios ? 'https://app.climatecart.app/'
+  : lang === 'nl' ? '/nl/' : lang === 'fr' ? '/fr/' : '/');
+</script>
+</head>
+<body>
+<p><a href="/">climatecart.app</a></p>
+</body>
+</html>

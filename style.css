@@ -161,3 +161,10 @@ td.num { white-space: nowrap; }
 .budget-food svg { display: block; margin: 0 auto 0.5rem; }
 .budget-food p { margin: 0; font-size: 0.9rem; line-height: 1.35; }
 .budget figcaption { flex-basis: 100%; font-size: 0.8rem; color: var(--muted); }
+
+.store-buttons { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+.store-badge img { display: block; height: 56px; width: auto; }
+.web-app-button { display: inline-flex; align-items: center; gap: 0.6rem; height: 56px; box-sizing: border-box; padding: 0 1.1rem; background: #000; color: #fff; border: 1px solid #a6a6a6; border-radius: 10px; text-decoration: none; text-align: left; }
+.web-app-button svg { width: 26px; height: 26px; flex-shrink: 0; }
+.web-app-button span { display: flex; flex-direction: column; font-size: 1.15rem; font-weight: 600; line-height: 1.15; }
+.web-app-button small { font-size: 0.7rem; font-weight: 400; }
