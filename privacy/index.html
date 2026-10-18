@@ -15,9 +15,9 @@
 
 
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated <strong>29 September 2026</strong> — Version <strong>2026-07-26</strong></p>
+<p class="meta">Last updated <strong>18 October 2026</strong> — Version <strong>2026-10-18</strong></p>
 
-<p>This Privacy Policy for the private individual acting as <strong>ClimateCart</strong> (full name and contact details in section 14 at the end of this policy) ("we", "us", "our"), explains how we access, collect, store, use, and share ("process") your personal information when you use our mobile application ClimateCart (the "Services").</p>
+<p>This Privacy Policy for the private individual acting as <strong>ClimateCart</strong> (full name and contact details in section 14 at the end of this policy) ("we", "us", "our"), explains how we access, collect, store, use, and share ("process") your personal information when you use our mobile application ClimateCart or its web version at app.climatecart.app (the "Services").</p>
 
 <p>ClimateCart is a mobile application that estimates the environmental footprint of grocery purchases. Users scan or upload their grocery receipts, which are processed via optical character recognition to identify products and calculate an estimated environmental footprint based on publicly available environmental impact databases. Users may optionally create an account to save their scan results.</p>
 
@@ -26,9 +26,9 @@
 <h2>1. Summary of key points</h2>
 <ul>
   <li><strong>What we collect from you:</strong> your email address and hashed password (at signup); your language preference; the results of receipt scans you choose to save; anonymous usage events (such as which features you use); and which product-match corrections you make when reviewing scan results.</li>
-  <li><strong>What we do <em>not</em> store:</strong> receipt images and PDFs you upload for scanning, and the text extracted from them, are processed transiently and discarded immediately after processing. We do not store IP addresses, device identifiers, or location data.</li>
+  <li><strong>What we do <em>not</em> store:</strong> receipt images and PDFs you upload for scanning, and the text extracted from them, are processed transiently and discarded immediately after processing. We do not store IP addresses, device identifiers, or location data. Our web host and our captcha provider receive your IP address to deliver and protect the Services; we do not receive or store it.</li>
   <li><strong>Sensitive information:</strong> we do not process special-category (sensitive) personal data as defined in Art. 9 GDPR.</li>
-  <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition of receipt <em>images</em> only.</li>
+  <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition of receipt <em>images</em> only. Cloudflare (web version hosting) and hCaptcha (bot protection), both United States companies.</li>
   <li><strong>Your rights:</strong> you have the right to access, rectify, erase, restrict, port, and object to the processing of your personal data, and to lodge a complaint with a supervisory authority.</li>
   <li><strong>Retention:</strong> we keep your data only for as long as your account is active. When you delete your account, all associated data is permanently and immediately removed. Accounts inactive for 24 consecutive months are automatically deleted along with all associated data.</li>
 </ul>
@@ -55,23 +55,28 @@
 <p>Neither the receipt image, nor the PDF, nor the extracted text is stored on our servers or by our sub-processors after the scan completes. Only the calculated results are stored, and only if you are signed in and choose to save them.</p>
 
 <h3>2.3 Information automatically collected</h3>
-<p>We do not use third-party analytics services, tracking pixels, cookies, or advertising identifiers. We do not collect or store your IP address, device identifiers, operating system version, or location data.</p>
+<p>We do not use third-party analytics services, tracking pixels, advertising identifiers, or advertising cookies. We do not collect or store your IP address, device identifiers, operating system version, or location data.</p>
 <p>We automatically collect the following data, all of which is stored within our existing EU-based database infrastructure:</p>
 <ul>
   <li><strong>Usage events:</strong> when you use certain features (such as scanning a receipt, saving results, or opening a screen), we record the event type, a timestamp, and your account identifier. These events contain no receipt content, product data, or other personally identifying information beyond your account identifier. They are used solely to understand how the app is used in aggregate and to identify technical problems.</li>
   <li><strong>Match corrections:</strong> when you review your scan results and correct a product match (for example, re-matching a product to a different entry, removing a product, or editing a weight), we record the original product text from the receipt, the action you took, the corrected product name if applicable, and an identifier of the scan the correction belongs to. This data is used to improve the accuracy of our product-matching pipeline over time and to show your own progress in the app (badges). It does not include the receipt image, the full receipt text, or any other product lines from the receipt.</li>
   <li><strong>Badges and milestones:</strong> which badge levels and milestone messages have been shown to you, so that each message appears only once. Your badge levels themselves are calculated from your saved scans and your match corrections; no separate data is collected for them.</li>
   <li><strong>Rate-limit counters:</strong> a per-user counter of API requests, used solely to enforce fair-use rate limits and prevent abuse of our OCR quota. This counter contains no personally identifying information beyond your account identifier.</li>
+  <li><strong>Bot protection:</strong> when you sign up, sign in, reset or change your password or email, or scan your first receipt without an account, an hCaptcha check runs. hCaptcha receives your IP address, browser and device characteristics, and how you interact with the check, to tell people from automated abuse. It may set a strictly necessary security cookie.</li>
 </ul>
 <p>All automatically collected data is deleted when you delete your account.</p>
 
-<h3>2.4 Mobile device permissions</h3>
+<h3>2.4 Storage on your device</h3>
+<p>The app keeps your language, onboarding progress, sign-in session, and dismissed messages on your device: in app storage on Android, and in your browser's local storage (localStorage) in the web version. This stays on your device. It is removed when you uninstall the app or clear the site data in your browser.</p>
+
+<h3>2.5 Device permissions</h3>
 <p>ClimateCart requests the following permissions on your Android device:</p>
 <ul>
   <li><strong>Camera</strong> — required to photograph grocery receipts.</li>
   <li><strong>Storage / file access</strong> — required to let you upload receipt PDFs from your device.</li>
 </ul>
 <p>These permissions are used only for the specific action you take (photographing or picking a file). You can revoke either permission at any time in your Android system settings.</p>
+<p><strong>Web version:</strong> photos and PDFs are picked through your browser's own camera or file picker. The web version only receives the file you choose, and you manage camera access in your browser settings.</p>
 
 <h2>3. How we use your information</h2>
 <p>We process your personal information only for the following purposes:</p>
@@ -88,7 +93,7 @@
 <p>Under the EU GDPR and UK GDPR, we rely on the following legal bases:</p>
 <ul>
   <li><strong>Performance of a contract</strong> (Art. 6.1.b) for account creation, authentication, receipt processing (OCR and matching), saving your scan results, and showing your progress in the app (badges and milestones).</li>
-  <li><strong>Legitimate interests</strong> (Art. 6.1.f) for per-user rate-limiting, which is necessary to protect the availability and cost-integrity of the Services against abuse; for collecting usage events, which is necessary to maintain and improve the reliability and quality of the Services; and for recording match corrections, which is necessary to improve the accuracy of the product-matching pipeline that the Services depend on.</li>
+  <li><strong>Legitimate interests</strong> (Art. 6.1.f) for per-user rate-limiting, which is necessary to protect the availability and cost-integrity of the Services against abuse; for collecting usage events, which is necessary to maintain and improve the reliability and quality of the Services; and for recording match corrections, which is necessary to improve the accuracy of the product-matching pipeline that the Services depend on; and for bot protection (hCaptcha) and the request processing by our web host (Cloudflare), which are necessary to deliver the web version and to protect the Services against automated abuse.</li>
   <li><strong>Legal obligation</strong> (Art. 6.1.c) for recording your acceptance of this Privacy Policy and our Terms of Use, which we are required to document under Art. 7 GDPR.</li>
 </ul>
 
@@ -98,12 +103,15 @@
   <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters, usage events, match correction records, and records of which badges and milestones have been shown to you.</li>
   <li><strong>Render</strong> (Render Services, Inc., hosted in Frankfurt, Germany) — provides backend application hosting. Data processed transiently: receipt image content, receipt PDF content, and the text extracted from them during the scan flow.</li>
   <li><strong>Google Cloud Vision</strong> (Google LLC, processed in the United States) — provides optical character recognition for receipt <em>images</em> only. Data processed transiently: receipt image content. PDFs are not sent to Google Cloud Vision.</li>
+  <li><strong>Cloudflare</strong> (Cloudflare, Inc., global network) — hosts the web version. Data processed: IP address and standard request data (such as browser type and the page requested) needed to deliver the site. No account or receipt data passes through Cloudflare; the web version sends that directly to Supabase and our backend.</li>
+  <li><strong>hCaptcha</strong> (Intuition Machines, Inc., United States) — provides bot protection. Data processed: IP address, browser and device characteristics, and interaction data during the check.</li>
 </ul>
 <p>We do not sell your personal information. We do not share it with advertisers, data brokers, or analytics providers.</p>
 
 <h2>6. International data transfers</h2>
 <p>Our primary infrastructure is located in Germany, within the European Union. Personal data stored by ClimateCart does not leave the EU. Receipts uploaded as PDFs are processed entirely within the EU.</p>
 <p>Receipts uploaded as photos are transiently transferred to the United States for optical character recognition by Google Cloud Vision. This transfer is protected by the <strong>EU-US Data Privacy Framework</strong>, under which Google LLC is self-certified with the U.S. Department of Commerce. As an additional safeguard, Google's Cloud Data Processing Addendum incorporates the European Commission's Standard Contractual Clauses.</p>
+<p>Cloudflare and hCaptcha may process your IP address and technical data in the United States. Both are certified under the EU-US Data Privacy Framework, and their data processing agreements include the Standard Contractual Clauses.</p>
 
 <h2>7. Retention</h2>
 <p>We keep your personal information only for as long as your account is active:</p>
@@ -114,9 +122,10 @@
   <li><strong>Rate-limit counters:</strong> deleted automatically when your account is deleted.</li>
   <li><strong>Use without an account:</strong> the app then works with an anonymous user ID that is not linked to an email address. That ID and its usage data are deleted after 90 days without use. Match corrections are kept without a user ID.</li>
   <li><strong>Receipt images, PDFs, and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
+  <li><strong>Technical data received by Cloudflare and hCaptcha:</strong> kept under their own retention terms.</li>
 </ul>
 <p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, usage events, match corrections, badge and milestone records, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
-<p><strong>Automatic deletion of inactive accounts.</strong> Accounts that have not been signed into for 24 consecutive months are automatically deleted, along with all associated data, without further notice. This is measured from the timestamp of your last successful sign-in.</p>
+<p><strong>Automatic deletion of inactive accounts.</strong> Accounts that have not been used for 24 consecutive months are automatically deleted, along with all associated data, without further notice. This is measured from your last use of the app.</p>
 <p><strong>Data exports.</strong> Before deleting your account, you may request a machine-readable export of the data we hold about you (see section 10, Right to data portability). Once your account is deleted, the data is no longer recoverable and we cannot fulfil any subsequent export request.</p>
 
 <h2>8. Security</h2>
@@ -151,13 +160,13 @@
 <p><strong>Right to complain.</strong> If you believe we have processed your personal data unlawfully, you have the right to lodge a complaint with the Belgian supervisory authority, the <strong>Gegevensbeschermingsautoriteit / Autorité de protection des données</strong> (<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">gegevensbeschermingsautoriteit.be</a>), or with the supervisory authority in your country of residence.</p>
 
 <h2>11. Do Not Track</h2>
-<p>ClimateCart is a native mobile application and does not track your browsing activity. We do not use cookies, web beacons, or any browser-based tracking technology, so there is nothing for a Do Not Track signal to affect.</p>
+<p>Neither the app nor its web version tracks your browsing. We use no analytics or advertising cookies, web beacons, or other tracking technology, so there is nothing for a Do Not Track signal to affect. The only cookie is hCaptcha's strictly necessary security cookie.</p>
 
 <h2>12. Third-party links</h2>
 <p>ClimateCart contains a link to Ko-fi, an external donation platform we use to accept optional donations. When you tap that link, you leave the ClimateCart app and Ko-fi's own privacy policy applies to your interaction with them. We do not share your ClimateCart account data with Ko-fi.</p>
 
 <h2>13. Updates to this Policy</h2>
-<p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the latest version. If we make material changes, we will notify you within the app on your next launch and require you to acknowledge the new version before continuing.</p>
+<p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the latest version. If we make material changes, we will update the version and date at the top of this page.</p>
 
 <h2>14. Contact</h2>
 <p>The data controller responsible for your personal information is:</p>
