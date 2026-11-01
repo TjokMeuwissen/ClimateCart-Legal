@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Méthodologie — ClimateCart</title>
+<meta name="description" content="D'où viennent les chiffres environnementaux de ClimateCart et comment ils sont calculés.">
+<link rel="stylesheet" href="../../style.css?v=a7583115">
+</head>
+<body data-page="methodology" data-lang="fr">
+<main>
+<!-- nav:start -->
+<header class="topbar"><a class="brand" href="/fr/">ClimateCart</a><nav class="lang"><a href="/methodology/en/" hreflang="en">EN</a><a href="/methodology/nl/" hreflang="nl">NL</a><a href="/methodology/fr/" hreflang="fr" aria-current="page">FR</a></nav></header>
+<nav class="pages"><a href="/fr/">Accueil</a><a href="/mission/fr/">Mission</a><a href="/methodology/fr/" aria-current="page">Méthodologie</a><a href="/about/fr/">À propos</a><a href="/legal/fr/">Juridique</a></nav>
+<!-- nav:end -->
+<h1>Méthodologie</h1>
+
+<p>Cette page explique d'où viennent les chiffres environnementaux de ClimateCart et comment ils sont calculés. Toutes les valeurs sont des estimations basées sur des données moyennes par type de produit.</p>
+
+<h2>Empreinte carbone</h2>
+<p><strong>Calcul&nbsp;:</strong> pour chaque produit, ClimateCart multiplie une empreinte carbone par kg par le poids du produit que vous avez acheté.</p>
+<ul>
+<li><strong>Empreinte par kg&nbsp;:</strong> provient d'Agribalyse 3.1.1, la base de données de référence sur l'alimentation de l'ADEME, l'agence française de la transition écologique. Elle donne l'empreinte carbone en kg CO₂e par kg de produit, calculée avec la méthode européenne Product Environmental Footprint (PEF) et sa méthode d'évaluation des impacts, EF 3.1.</li>
+<li><strong>Poids&nbsp;:</strong> si le ticket de caisse indique un poids, par exemple pour les fruits et légumes en vrac ou la viande vendue au poids, c'est ce poids qui est utilisé. Sinon, ClimateCart utilise un poids par défaut pour ce produit, comme une taille d'emballage courante, multiplié par le nombre d'articles. Vous pouvez toujours corriger le poids dans l'application.</li>
+<li><strong>Produits dans la base de données&nbsp;:</strong> la base de données Agribalyse contient souvent plusieurs versions d'un même aliment, préparées de différentes façons (par exemple du saumon vapeur, cuit ou au four). ClimateCart ne garde que la version telle qu'elle est vendue en magasin. Au total, la base de données de ClimateCart utilise environ 550 produits d'Agribalyse.</li>
+<li><strong>Produits similaires&nbsp;:</strong> différents produits d'un ticket peuvent être associés au même produit de la base de données. Jupiler, Stella et Maes sont tous associés à «&nbsp;bière&nbsp;» et ont donc la même empreinte par kg.</li>
+<li><strong>Étapes du cycle de vie&nbsp;:</strong> l'empreinte dans l'application additionne cinq étapes&nbsp;: agriculture, transformation, emballage, transport et supermarché. La base de données Agribalyse contient aussi une valeur pour l'étape de consommation (conservation et cuisson à la maison), mais elle n'est pas prise en compte, faute d'informations pour calculer cet impact. Dans l'application, l'étape supermarché est affichée avec le transport.</li>
+<li><strong>Produits en vrac&nbsp;:</strong> pour les produits pesés en magasin, l'étape emballage n'est pas comptée.</li>
+<li><strong>Associations plus larges&nbsp;:</strong> quand une ligne du ticket ne peut être associée qu'à une catégorie de produits (par exemple «&nbsp;fromage&nbsp;»), l'empreinte moyenne des produits de cette catégorie est utilisée.</li>
+<li><strong>Empreintes des marques&nbsp;:</strong> pour quelques marques qui publient l'empreinte carbone de leurs propres produits (Oatly, Quorn et Flora), cette valeur publiée remplace la valeur Agribalyse. Ces produits sont marqués d'une étoile.</li>
+</ul>
+<p class="sources">Source&nbsp;: Source ADEME, données AGRIBALYSE v3.1.1 - 2023 (<a href="https://agribalyse.ademe.fr">Agribalyse</a>, <a href="https://doc.agribalyse.fr/documentation/les-donnees/methodologie-acv">documentation</a>).</p>
+
+<h2>Alternative végétale</h2>
+<p>Pour la viande, le poisson, les produits laitiers et les autres produits d'origine animale, l'application montre comment votre ticket se compare à une alternative végétale.</p>
+<ul>
+<li><strong>Remplacements&nbsp;:</strong> chaque produit animal est remplacé par un produit végétal du même type (par exemple la viande hachée par du haché végétal).</li>
+<li><strong>Protéines, quand c'est pertinent&nbsp;:</strong> pour des produits comme les morceaux de viande, le poids de l'alternative est ajusté pour fournir la même quantité de protéines. Pour les produits où les protéines sont moins pertinentes, comme la charcuterie, l'alternative remplace le même poids.</li>
+</ul>
+
+<h2>Consommation d'eau et utilisation des terres</h2>
+<p>La carte thermique montre deux autres indicateurs d'Agribalyse, calculés avec la même méthode EF 3.1&nbsp;:</p>
+<ul>
+<li><strong>Consommation d'eau&nbsp;:</strong> l'eau consommée pendant la vie du produit, pondérée selon sa rareté dans la région où elle est utilisée.</li>
+<li><strong>Utilisation des terres&nbsp;:</strong> toutes les terres nécessaires pour fabriquer le produit et leur effet sur la qualité du sol.</li>
+</ul>
+<p>Ces indicateurs sont uniquement affichés en parts (quels produits ou groupes d'aliments représentent la plus grande partie du total), pas en valeurs absolues. Leurs unités (m³ équivalent monde et points) sont difficiles à interpréter. Pour les produits avec une empreinte de marque, ce sont les valeurs d'eau et de terres du produit Agribalyse correspondant qui sont utilisées.</p>
+
+<h2>Budget et comparaisons</h2>
+<ul>
+<li><strong>Budget mensuel&nbsp;:</strong> pour rester en ligne avec l'objectif de 1,5&nbsp;°C de l'Accord de Paris, le budget carbone est d'environ 2,5 tonnes de CO₂e par personne et par an. Divisé par 12, cela fait environ 208&nbsp;kg par mois. C'est le budget pour toute votre empreinte, pas seulement pour l'alimentation.</li>
+<li><strong>Trois types de mangeurs&nbsp;:</strong> dans les analyses, votre CO₂ par kg d'aliments est comparé à trois régimes types&nbsp;:
+<ul>
+<li><strong>Grand mangeur de viande</strong> (plus de 100&nbsp;g de viande par jour)&nbsp;: environ 2,6&nbsp;kg CO₂e par kg d'aliments.</li>
+<li><strong>Petit mangeur de viande</strong> (moins de 50&nbsp;g de viande par jour)&nbsp;: environ 1,5&nbsp;kg CO₂e par kg d'aliments.</li>
+<li><strong>Végétarien&nbsp;:</strong> environ 1,0&nbsp;kg CO₂e par kg d'aliments.</li>
+</ul>
+Ces régimes proviennent d'une étude sur ce que mangent et boivent 55&#8239;000 adultes au Royaume-Uni. ClimateCart a calculé le CO₂ par kg de chaque régime à partir de ses principaux groupes d'aliments, avec les mêmes valeurs Agribalyse que pour vos tickets de caisse.</li>
+<li><strong>Voiture&nbsp;:</strong> une voiture essence neuve moyenne émet environ 120&nbsp;g de CO₂ par km (uniquement les gaz d'échappement).</li>
+<li><strong>Frigo&nbsp;:</strong> un réfrigérateur-congélateur de classe énergétique D consomme environ 200&nbsp;kWh par an. Avec le mix électrique belge de 2025 (0,18&nbsp;kg de CO₂ par kWh), cela représente environ 36&nbsp;kg de CO₂ par an.</li>
+<li><strong>Arbre&nbsp;:</strong> un arbre adulte absorbe environ 22&nbsp;kg de CO₂ par an.</li>
+</ul>
+<p>Ces comparaisons sont arrondies et purement indicatives.</p>
+<div class="sources">
+<p>Sources&nbsp;:</p>
+<ul>
+<li>Budget&nbsp;: Hot or Cool Institute (2021), <a href="https://hotorcool.org/hc-projects/1-5-degree-lifestyles">1.5-Degree Lifestyles</a>.</li>
+<li>Régimes&nbsp;: Scarborough, P. et al. (2023), <em>Vegans, vegetarians, fish-eaters and meat-eaters in the UK show discrepant environmental impacts</em>, Nature Food 4, 565–574 (<a href="https://doi.org/10.1038/s43016-023-00795-w">doi:10.1038/s43016-023-00795-w</a>).</li>
+</ul>
+</div>
+<!-- footer:start -->
+<footer><p>Des questions&nbsp;? <a href="mailto:contact@climatecart.app">contact@climatecart.app</a> · <a href="https://ko-fi.com/climatecart">Soutenez ClimateCart sur Ko-fi</a></p><p>Données carbone&nbsp;: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Fait à Bruxelles.</p></footer>
+<!-- footer:end -->
+</main>
+</body>
+</html>

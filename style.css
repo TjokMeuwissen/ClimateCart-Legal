@@ -170,3 +170,16 @@ td.num { white-space: nowrap; }
 .web-app-button small { font-size: 0.7rem; font-weight: 400; }
 .ios-icon { width: 1.25em; height: 1.25em; vertical-align: -0.25em; color: #007aff; }
 .ios-icon.menu { color: var(--text); }
+
+/* About */
+.about-photo { margin: 1.5rem 0 0.5rem; }
+.about-photo img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.about-photo figcaption { margin-top: 0.6rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; }
+.about-photo .linkedin { display: inline-flex; align-items: center; gap: 0.35rem; }
+.about-photo .linkedin svg { color: #0a66c2; }
+
+/* Methodology */
+.sources { margin-top: -0.25rem; }
+.sources p, .sources ul { margin-bottom: 0.4rem; }
+.sources li { margin-bottom: 0.2rem; }
+li ul { margin: 0.35rem 0 0.5rem; }

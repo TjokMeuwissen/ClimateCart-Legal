@@ -2,23 +2,31 @@
   "sections": [
     "home",
     "mission",
+    "methodology",
+    "about",
     "legal"
   ],
   "labels": {
     "en": {
       "home": "Home",
       "mission": "Mission",
-      "legal": "Legal"
+      "legal": "Legal",
+      "about": "About",
+      "methodology": "Methodology"
     },
     "nl": {
       "home": "Home",
       "mission": "Missie",
-      "legal": "Juridisch"
+      "legal": "Juridisch",
+      "about": "Over",
+      "methodology": "Methodologie"
     },
     "fr": {
       "home": "Accueil",
       "mission": "Mission",
-      "legal": "Juridique"
+      "legal": "Juridique",
+      "about": "À propos",
+      "methodology": "Méthodologie"
     }
   },
   "pages": {
@@ -42,6 +50,16 @@
       "en": "/legal/en/",
       "nl": "/legal/nl/",
       "fr": "/legal/fr/"
+    },
+    "about": {
+      "en": "/about/en/",
+      "nl": "/about/nl/",
+      "fr": "/about/fr/"
+    },
+    "methodology": {
+      "en": "/methodology/en/",
+      "nl": "/methodology/nl/",
+      "fr": "/methodology/fr/"
     }
   },
   "sectionOf": {
@@ -49,11 +67,13 @@
     "mission": "mission",
     "privacy": "legal",
     "terms": "legal",
-    "legal": "legal"
+    "legal": "legal",
+    "about": "about",
+    "methodology": "methodology"
   },
   "footer": {
-    "en": "<p>Questions? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Support us on Ko-fi</a></p><p>Carbon data: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Made in Brussels.</p>",
-    "nl": "<p>Vragen? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Steun ons op Ko-fi</a></p><p>Koolstofdata: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Gemaakt in Brussel.</p>",
-    "fr": "<p>Des questions&nbsp;? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Soutenez-nous sur Ko-fi</a></p><p>Données carbone&nbsp;: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Fait à Bruxelles.</p>"
+    "en": "<p>Questions? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Support ClimateCart on Ko-fi</a></p><p>Carbon data: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Made in Brussels.</p>",
+    "nl": "<p>Vragen? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Steun ClimateCart op Ko-fi</a></p><p>Koolstofdata: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Gemaakt in Brussel.</p>",
+    "fr": "<p>Des questions&nbsp;? <a href=\"mailto:contact@climatecart.app\">contact@climatecart.app</a> · <a href=\"https://ko-fi.com/climatecart\">Soutenez ClimateCart sur Ko-fi</a></p><p>Données carbone&nbsp;: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Fait à Bruxelles.</p>"
   }
 }

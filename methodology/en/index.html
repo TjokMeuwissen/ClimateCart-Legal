@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology — ClimateCart</title>
+<meta name="description" content="Where the environmental figures in ClimateCart come from and how they are calculated.">
+<link rel="stylesheet" href="../../style.css?v=a7583115">
+</head>
+<body data-page="methodology" data-lang="en">
+<main>
+<!-- nav:start -->
+<header class="topbar"><a class="brand" href="/">ClimateCart</a><nav class="lang"><a href="/methodology/en/" hreflang="en" aria-current="page">EN</a><a href="/methodology/nl/" hreflang="nl">NL</a><a href="/methodology/fr/" hreflang="fr">FR</a></nav></header>
+<nav class="pages"><a href="/">Home</a><a href="/mission/en/">Mission</a><a href="/methodology/en/" aria-current="page">Methodology</a><a href="/about/en/">About</a><a href="/legal/en/">Legal</a></nav>
+<!-- nav:end -->
+<h1>Methodology</h1>
+
+<p>This page explains where the environmental figures in ClimateCart come from and how they are calculated. All values are estimates based on average data per product type.</p>
+
+<h2>Carbon footprint</h2>
+<p><strong>Calculation:</strong> for each product, ClimateCart multiplies a carbon footprint per kg by the weight of the product you bought.</p>
+<ul>
+<li><strong>Footprint per kg:</strong> comes from Agribalyse 3.1.1, the reference food database of the French environment agency ADEME. It gives the carbon footprint in kg CO₂e per kg of product, calculated with the European Product Environmental Footprint (PEF) method and its impact assessment method EF 3.1.</li>
+<li><strong>Weight:</strong> when the receipt shows a weight, for example for loose fruit and vegetables or meat sold by weight, that weight is used. Otherwise ClimateCart uses a default weight for that product, such as a typical pack size, multiplied by the number of items. You can always correct the weight in the app.</li>
+<li><strong>Products in the database:</strong> Agribalyse often contains several versions of the same food, prepared in different ways (for example salmon steamed, cooked or baked in the oven). ClimateCart only keeps the version as it is sold in the shop. In total, the ClimateCart database uses about 550 products from Agribalyse.</li>
+<li><strong>Similar products:</strong> different products on a receipt can be linked to the same product in the database. Jupiler, Stella and Maes are all matched to "beer", so they get the same footprint per kg.</li>
+<li><strong>Life-cycle stages:</strong> the footprint in the app adds up five stages: agriculture, processing, packaging, transport, and the supermarket. The Agribalyse database also contains a value for the consumption stage (storage and cooking at home), but this is left out since there is no information to calculate this impact. In the app, the supermarket stage is shown together with transport.</li>
+<li><strong>Loose products:</strong> for products weighed in the shop, the packaging stage is left out.</li>
+<li><strong>Broader matches:</strong> when a receipt line can only be linked to a product category (for example "cheese"), the average footprint of the products in that category is used.</li>
+<li><strong>Brand footprints:</strong> for a few brands that publish the carbon footprint of their own products (Oatly, Quorn and Flora), that published value replaces the Agribalyse value. These products are marked with a star.</li>
+</ul>
+<p class="sources">Source: Source ADEME, données AGRIBALYSE v3.1.1 - 2023 (<a href="https://agribalyse.ademe.fr">Agribalyse</a>, <a href="https://doc.agribalyse.fr/documentation/les-donnees/methodologie-acv">documentation</a>).</p>
+
+<h2>Plant-based alternative</h2>
+<p>For meat, fish, dairy and other animal products, the app shows how your receipt would compare with a plant-based alternative.</p>
+<ul>
+<li><strong>Swaps:</strong> each animal product is replaced by a plant-based product of the same kind (for example minced meat by plant-based mince).</li>
+<li><strong>Protein, where it makes sense:</strong> for products such as cuts of meat, the weight of the alternative is adjusted so it provides the same amount of protein. For products where protein is less relevant, such as charcuterie, the alternative replaces the same weight.</li>
+</ul>
+
+<h2>Water and land use</h2>
+<p>The heatmap shows two more indicators from Agribalyse, calculated with the same EF 3.1 method:</p>
+<ul>
+<li><strong>Water consumption:</strong> water consumed over the product's lifetime, weighted by how scarce water is where it is used.</li>
+<li><strong>Land use:</strong> all land needed to make the product, and its effect on soil quality.</li>
+</ul>
+<p>These indicators are shown as shares only (which products or food groups make up most of the total), not as absolute numbers. Their units (m³ world equivalent and points) are hard to interpret. For products with a brand footprint, the water and land values of the matching Agribalyse product are used.</p>
+
+<h2>Budget and comparisons</h2>
+<ul>
+<li><strong>Monthly budget:</strong> to stay in line with the 1.5&nbsp;°C goal of the Paris Agreement, the carbon budget is about 2.5 tonnes CO₂e per person per year. Divided by 12, that is about 208&nbsp;kg per month. This is the budget for your whole footprint, not only for food.</li>
+<li><strong>Three types of eaters:</strong> in the analytics, your CO₂ per kg of food is compared with three typical diets:
+<ul>
+<li><strong>High meat-eater</strong> (more than 100&nbsp;g of meat per day): about 2.6&nbsp;kg CO₂e per kg of food.</li>
+<li><strong>Low meat-eater</strong> (less than 50&nbsp;g of meat per day): about 1.5&nbsp;kg CO₂e per kg of food.</li>
+<li><strong>Vegetarian:</strong> about 1.0&nbsp;kg CO₂e per kg of food.</li>
+</ul>
+The diets come from a study of what 55&#8239;000 adults in the UK eat and drink. ClimateCart calculated the CO₂ per kg of each diet from its main food groups, with the same Agribalyse values as for your receipts.</li>
+<li><strong>Car:</strong> an average new petrol car emits about 120&nbsp;g CO₂ per km (exhaust only).</li>
+<li><strong>Fridge:</strong> a fridge-freezer with energy label D uses about 200&nbsp;kWh per year. With Belgium's 2025 electricity mix (0.18&nbsp;kg CO₂ per kWh), that is about 36&nbsp;kg CO₂ per year.</li>
+<li><strong>Tree:</strong> a mature tree absorbs about 22&nbsp;kg CO₂ per year.</li>
+</ul>
+<p>The comparisons are rounded and are meant as an illustration.</p>
+<div class="sources">
+<p>Sources:</p>
+<ul>
+<li>Budget: Hot or Cool Institute (2021), <a href="https://hotorcool.org/hc-projects/1-5-degree-lifestyles">1.5-Degree Lifestyles</a>.</li>
+<li>Diets: Scarborough, P. et al. (2023), <em>Vegans, vegetarians, fish-eaters and meat-eaters in the UK show discrepant environmental impacts</em>, Nature Food 4, 565–574 (<a href="https://doi.org/10.1038/s43016-023-00795-w">doi:10.1038/s43016-023-00795-w</a>).</li>
+</ul>
+</div>
+<!-- footer:start -->
+<footer><p>Questions? <a href="mailto:contact@climatecart.app">contact@climatecart.app</a> · <a href="https://ko-fi.com/climatecart">Support ClimateCart on Ko-fi</a></p><p>Carbon data: Source ADEME, données AGRIBALYSE v3.1.1 - 2023. Made in Brussels.</p></footer>
+<!-- footer:end -->
+</main>
+</body>
+</html>
