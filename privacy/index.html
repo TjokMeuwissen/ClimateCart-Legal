@@ -15,7 +15,7 @@
 
 
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated <strong>18 October 2026</strong> — Version <strong>2026-10-18</strong></p>
+<p class="meta">Last updated <strong>3 November 2026</strong> — Version <strong>2026-11-03</strong></p>
 
 <p>This Privacy Policy for the private individual acting as <strong>ClimateCart</strong> (full name and contact details in section 14 at the end of this policy) ("we", "us", "our"), explains how we access, collect, store, use, and share ("process") your personal information when you use our mobile application ClimateCart or its web version at app.climatecart.app (the "Services").</p>
 
@@ -25,7 +25,7 @@
 
 <h2>1. Summary of key points</h2>
 <ul>
-  <li><strong>What we collect from you:</strong> your email address and hashed password (at signup); your language preference; the results of receipt scans you choose to save; anonymous usage events (such as which features you use); and which product-match corrections you make when reviewing scan results.</li>
+  <li><strong>What we collect from you:</strong> your email address and hashed password (at signup); your language preference; the results of receipt scans you choose to save; the personal targets you turn on; anonymous usage events (such as which features you use); and which product-match corrections you make when reviewing scan results.</li>
   <li><strong>What we do <em>not</em> store:</strong> receipt images and PDFs you upload for scanning, and the text extracted from them, are processed transiently and discarded immediately after processing. We do not store IP addresses, device identifiers, or location data. Our web host and our captcha provider receive your IP address to deliver and protect the Services; we do not receive or store it.</li>
   <li><strong>Sensitive information:</strong> we do not process special-category (sensitive) personal data as defined in Art. 9 GDPR.</li>
   <li><strong>Sub-processors:</strong> Supabase (Frankfurt, EU) for authentication and database, Render (Frankfurt, EU) for backend hosting, and Google Cloud Vision (United States) for optical character recognition of receipt <em>images</em> only. Cloudflare (web version hosting) and hCaptcha (bot protection), both United States companies.</li>
@@ -42,6 +42,7 @@
   <li>Your <strong>password</strong>, stored only as a hash by our authentication provider.</li>
   <li>Your <strong>language preference</strong> (Dutch, French, or English).</li>
   <li>The <strong>saved results of your receipt scans</strong>, including the receipt date, an optional name you assign to the receipt, the product-level breakdown, the calculated total carbon footprint, and optionally your household size. This information is stored only if you choose to save a scan while signed in.</li>
+  <li>Your <strong>personal targets</strong>, if you turn them on: which targets you chose, the value you set for each (for example a share of plant protein), and a dated record of each change, so that every month is compared with the target that applied in that month.</li>
   <li>Timestamps recording when you accepted this Privacy Policy and our Terms of Use, and the version identifiers of the versions you accepted.</li>
 </ul>
 
@@ -81,7 +82,7 @@
 <h2>3. How we use your information</h2>
 <p>We process your personal information only for the following purposes:</p>
 <ul>
-  <li><strong>To provide the Services:</strong> authenticating your account, running the OCR and footprint-calculation pipeline on receipts you submit, storing and retrieving results you choose to save, and showing your progress in the app (badges and milestones).</li>
+  <li><strong>To provide the Services:</strong> authenticating your account, running the OCR and footprint-calculation pipeline on receipts you submit, storing and retrieving results you choose to save, and showing your progress in the app (badges, milestones and personal targets).</li>
   <li><strong>To improve the Services:</strong> recording which product matches you correct during the review step, so we can improve the accuracy of our product-matching pipeline over time; and collecting anonymous usage events to understand how features are used and to identify technical problems.</li>
   <li><strong>To respond to inquiries:</strong> when you contact us at <a href="mailto:contact@climatecart.app">contact@climatecart.app</a>.</li>
   <li><strong>To protect the Services:</strong> preventing abuse of our infrastructure and OCR quota via per-user rate-limiting.</li>
@@ -92,7 +93,7 @@
 <h2>4. Legal bases for processing (GDPR)</h2>
 <p>Under the EU GDPR and UK GDPR, we rely on the following legal bases:</p>
 <ul>
-  <li><strong>Performance of a contract</strong> (Art. 6.1.b) for account creation, authentication, receipt processing (OCR and matching), saving your scan results, and showing your progress in the app (badges and milestones).</li>
+  <li><strong>Performance of a contract</strong> (Art. 6.1.b) for account creation, authentication, receipt processing (OCR and matching), saving your scan results, and showing your progress in the app (badges, milestones and personal targets).</li>
   <li><strong>Legitimate interests</strong> (Art. 6.1.f) for per-user rate-limiting, which is necessary to protect the availability and cost-integrity of the Services against abuse; for collecting usage events, which is necessary to maintain and improve the reliability and quality of the Services; and for recording match corrections, which is necessary to improve the accuracy of the product-matching pipeline that the Services depend on; and for bot protection (hCaptcha) and the request processing by our web host (Cloudflare), which are necessary to deliver the web version and to protect the Services against automated abuse.</li>
   <li><strong>Legal obligation</strong> (Art. 6.1.c) for recording your acceptance of this Privacy Policy and our Terms of Use, which we are required to document under Art. 7 GDPR.</li>
 </ul>
@@ -100,7 +101,7 @@
 <h2>5. Sub-processors</h2>
 <p>We share personal information only with the following sub-processors, each of which acts on our documented instructions under a data processing agreement:</p>
 <ul>
-  <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters, usage events, match correction records, and records of which badges and milestones have been shown to you.</li>
+  <li><strong>Supabase</strong> (Supabase Inc., hosted in Frankfurt, Germany) — provides authentication and database hosting. Data processed: email address, hashed password, language preference, saved scan results, consent timestamps and versions, per-user rate-limit counters, usage events, match correction records, records of which badges and milestones have been shown to you, and your personal targets with their change history.</li>
   <li><strong>Render</strong> (Render Services, Inc., hosted in Frankfurt, Germany) — provides backend application hosting. Data processed transiently: receipt image content, receipt PDF content, and the text extracted from them during the scan flow.</li>
   <li><strong>Google Cloud Vision</strong> (Google LLC, processed in the United States) — provides optical character recognition for receipt <em>images</em> only. Data processed transiently: receipt image content. PDFs are not sent to Google Cloud Vision.</li>
   <li><strong>Cloudflare</strong> (Cloudflare, Inc., global network) — hosts the web version. Data processed: IP address and standard request data (such as browser type and the page requested) needed to deliver the site. No account or receipt data passes through Cloudflare; the web version sends that directly to Supabase and our backend.</li>
@@ -118,13 +119,13 @@
 <ul>
   <li><strong>Account records</strong> (email, hashed password, language, consent timestamps): kept until you delete your account, or until your account has been inactive for 24 consecutive months.</li>
   <li><strong>Saved receipt scans:</strong> kept until you delete the individual receipt, delete your account, or until your account has been inactive for 24 consecutive months.</li>
-  <li><strong>Usage events, match corrections, and badge and milestone records:</strong> kept for as long as your account is active. Deleted when you delete your account or when your account is automatically deleted due to inactivity.</li>
+  <li><strong>Usage events, match corrections, badge and milestone records, and personal targets:</strong> kept for as long as your account is active. Deleted when you delete your account or when your account is automatically deleted due to inactivity.</li>
   <li><strong>Rate-limit counters:</strong> deleted automatically when your account is deleted.</li>
   <li><strong>Use without an account:</strong> the app then works with an anonymous user ID that is not linked to an email address. That ID and its usage data are deleted after 90 days without use. Match corrections are kept without a user ID.</li>
   <li><strong>Receipt images, PDFs, and extracted text:</strong> not retained at all — discarded immediately after each scan.</li>
   <li><strong>Technical data received by Cloudflare and hCaptcha:</strong> kept under their own retention terms.</li>
 </ul>
-<p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, usage events, match corrections, badge and milestone records, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
+<p><strong>Account deletion.</strong> You can delete individual saved receipts from the receipt-detail screen, or your entire account from the settings screen, at any time. When you delete your account, all associated data — profile record, saved receipts, usage events, match corrections, badge and milestone records, personal targets, consent timestamps, and rate-limit counters — is permanently and immediately removed from our database. There is no grace period and deletion is irreversible.</p>
 <p><strong>Automatic deletion of inactive accounts.</strong> Accounts that have not been used for 24 consecutive months are automatically deleted, along with all associated data, without further notice. This is measured from your last use of the app.</p>
 <p><strong>Data exports.</strong> Before deleting your account, you may request a machine-readable export of the data we hold about you (see section 10, Right to data portability). Once your account is deleted, the data is no longer recoverable and we cannot fulfil any subsequent export request.</p>
 
